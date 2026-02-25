@@ -1,0 +1,57 @@
+.trending-sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--text-primary);
+    display: inline-block;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.compact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 1.5rem 0;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-pill {
+    padding: 0.4rem 0.8rem;
+    background-color: var(--bg-hover);
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tag-pill:hover {
+    background-color: var(--text-primary);
+    color: white;
+}
+
+.tag-pill .hash {
+    color: var(--accent-color);
+    margin-right: 2px;
+}

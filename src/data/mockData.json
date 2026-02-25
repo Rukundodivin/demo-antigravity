@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "position": 1,
+    "source": "Baptiste Simard - IA",
+    "channelAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=BaptIA",
+    "title": "Maîtriser l'Infrastructure IA pour l'Entreprise avec Gemini 3.1",
+    "summary": "Présentation experte des infrastructures IA modernes et de l'orchestration des bases de données avec Google Antigravity et N10/N8N.",
+    "category": "Infrastructure",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop",
+    "views": "250K",
+    "duration": "24:15",
+    "url": "https://www.youtube.com/results?search_query=Baptiste+Simard+Infrastructure+IA+Gemini+3.1"
+  },
+  {
+    "id": "2",
+    "position": 2,
+    "source": "YouWare",
+    "channelAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=YouWare",
+    "title": "Le Combat des Outils : Lovable vs Cursor vs Bolt en 2026",
+    "summary": "Comparaison approfondie des leaders du Vibecoding : Cursor pour les développeurs pros face à Lovable pour le prototypage ultra-rapide.",
+    "category": "Vibecoding",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1000&auto=format&fit=crop",
+    "views": "112K",
+    "duration": "18:40",
+    "url": "https://www.youtube.com/results?search_query=Lovable+vs+Cursor+vs+Bolt+2026"
+  },
+  {
+    "id": "3",
+    "position": 3,
+    "source": "Agentic Academy",
+    "channelAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=AgenticAcademy",
+    "title": "Construisez vos Agents IA Autonomes avec N8N",
+    "summary": "Tutoriel complet 2026 sur la nouvelle stack d'automatisation : comment lier N8N avec les LLMs pour créer des workflows 100% agentiques.",
+    "category": "Agents",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1633412802994-5c058f151b66?q=80&w=1000&auto=format&fit=crop",
+    "views": "85K",
+    "duration": "38:20",
+    "url": "https://www.youtube.com/results?search_query=N8N+Agentic+Workflows+2026"
+  },
+  {
+    "id": "4",
+    "position": 4,
+    "source": "David Siren Eisner",
+    "channelAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=DavidSE",
+    "title": "Cursor vs Lovable : Choisir le bon outil IA",
+    "summary": "Analyse stratégique pour choisir entre un workflow IDE augmenté et un générateur visuel no-code full-stack.",
+    "category": "Vibecoding",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop",
+    "views": "45K",
+    "duration": "12:15",
+    "url": "https://www.youtube.com/results?search_query=Cursor+vs+Lovable+David+Siren+Eisner"
+  },
+  {
+    "id": "5",
+    "position": 5,
+    "source": "Cloud Code Experts",
+    "channelAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=CloudCode",
+    "title": "La fin de N8N classique ? La transition vers l'Agentique",
+    "summary": "Pourquoi les workflows visuels évoluent vers une approche multi-agents et la nouvelle stack d'automatisation à 3 niveaux.",
+    "category": "Agents",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
+    "views": "130K",
+    "duration": "22:50",
+    "url": "https://www.youtube.com/results?search_query=La+fin+de+N8N+classique+transition+Agentique"
+  },
+  {
+    "id": "6",
+    "position": 6,
+    "source": "Noca AI",
+    "channelAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=NocaAI",
+    "title": "Vibecoding Hybride : Combiner Cursor et Lovable",
+    "summary": "L'approche ultime : utiliser Lovable pour la vitesse d'exploration et Cursor pour la puissance d'exécution en production.",
+    "category": "Vibecoding",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
+    "views": "67K",
+    "duration": "15:30",
+    "url": "https://www.youtube.com/results?search_query=Vibecoding+Hybride+Cursor+Lovable"
+  }
+]
