@@ -54,6 +54,16 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  cursor: none;
+}
+
+a,
+button,
+input,
+textarea,
+.nav-tab,
+.video-card {
+  cursor: none !important;
 }
 
 #root {

@@ -3,6 +3,7 @@ import LeftSidebar from './components/LeftSidebar';
 import TopNav from './components/TopNav';
 import VideoGrid from './components/VideoGrid';
 import RightSidebar from './components/RightSidebar';
+import CustomCursor from './components/CustomCursor';
 import mockData from './data/mockData.json';
 import './App.css';
 
@@ -27,28 +28,31 @@ function App() {
   });
 
   return (
-    <div className="app-layout">
-      {/* Sidebar Gauche */}
-      <LeftSidebar />
+    <>
+      <CustomCursor />
+      <div className="app-layout">
+        {/* Sidebar Gauche */}
+        <LeftSidebar />
 
-      {/* Zone Centrale */}
-      <main className="main-feed">
-        <TopNav
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-        />
-        <div className="dashboard-content">
-          <VideoGrid videos={filteredData} activeTab={activeTab} />
-        </div>
-      </main>
+        {/* Zone Centrale */}
+        <main className="main-feed">
+          <TopNav
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+          />
+          <div className="dashboard-content">
+            <VideoGrid videos={filteredData} activeTab={activeTab} />
+          </div>
+        </main>
 
-      {/* Sidebar Droite */}
-      <aside className="sidebar-right">
-        <RightSidebar videos={filteredData} activeTab={activeTab} />
-      </aside>
-    </div>
+        {/* Sidebar Droite */}
+        <aside className="sidebar-right">
+          <RightSidebar videos={filteredData} activeTab={activeTab} />
+        </aside>
+      </div>
+    </>
   );
 }
 

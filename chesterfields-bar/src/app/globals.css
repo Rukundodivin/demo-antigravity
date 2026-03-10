@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Colors - Chesterfields Bar "Dark Warm Mode" */
+  --color-primary: #1A0A00;
+  --color-secondary: #2C1A0E;
+  --color-accent: #C8860A;
+  --color-accent-light: #F5A623;
+  --color-gold: #FFD700;
+  --color-text-primary: #F5EDD6;
+  --color-text-secondary: #A89070;
+  --color-surface: #231208;
+  --color-border-amber: rgba(200, 134, 10, 0.25);
+
+  /* Fonts */
+  --font-playfair: "var(--font-playfair)", serif;
+  --font-inter: "var(--font-inter)", sans-serif;
+
+  /* Radius */
+  --radius-container: 32px;
+  --radius-card: 20px;
+  --radius-button: 50px;
+  --radius-badge: 8px;
+}
+
+:root {
+  --background: #1A0A00;
+  --foreground: #F5EDD6;
+  --card: #231208;
+  --card-foreground: #F5EDD6;
+  --popover: #231208;
+  --popover-foreground: #F5EDD6;
+  --primary: #C8860A;
+  --primary-foreground: #1A0A00;
+  --secondary: #2C1A0E;
+  --secondary-foreground: #F5EDD6;
+  --muted: #2C1A0E;
+  --muted-foreground: #A89070;
+  --accent: #C8860A;
+  --accent-foreground: #1A0A00;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: rgba(200, 134, 10, 0.25);
+  --input: rgba(200, 134, 10, 0.2);
+  --ring: #C8860A;
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair);
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, #C8860A 0%, #F5A623 40%, #FFD700 70%, #C8860A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-header {
+    background-color: rgba(26, 10, 0, 0.92);
+    backdrop-filter: blur(16px);
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    gap: var(--gap, 1rem);
+    animation: marquee var(--duration, 40s) linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
