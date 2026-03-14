@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Phone, MapPin, Clock, Calendar, MessageSquare } from "lucide-react";
 
 export const Reservation = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     return (
         <section id="reservation" className="py-24 bg-[#1A0A00] border-t border-white/5">
             <div className="container mx-auto px-6">
@@ -51,49 +53,22 @@ export const Reservation = () => {
                     </div>
 
                     {/* Form */}
-                    <div className="w-full lg:w-1/2 p-8 md:p-12 bg-[#231208] rounded-[40px] border border-white/5 shadow-2xl relative">
-                        <form className="space-y-6 relative z-10">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-[10px] uppercase tracking-widest text-[#F5EDD6]/60 font-bold px-4">Nom Complet</label>
-                                    <input type="text" placeholder="John Doe" className="bg-[#1A0A00] border border-white/10 p-4 rounded-2xl text-[#F5EDD6] focus:border-amber-500 transition-colors outline-none" />
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-[10px] uppercase tracking-widest text-[#F5EDD6]/60 font-bold px-4">Date</label>
-                                    <input type="date" className="bg-[#1A0A00] border border-white/10 p-4 rounded-2xl text-[#F5EDD6] focus:border-amber-500 transition-colors outline-none [color-scheme:dark]" />
-                                </div>
+                    <div className="w-full lg:w-1/2 relative bg-[#231208] rounded-[40px] border border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.15)] overflow-hidden flex items-center justify-center h-[800px] md:h-[600px]">
+                        {isLoading && (
+                            <div className="absolute inset-0 flex items-center justify-center bg-[#231208] z-10 transition-opacity duration-500">
+                                <p className="text-[#D4AF37] text-lg font-bold animate-pulse text-center px-4">
+                                    Chargement du formulaire de réservation...
+                                </p>
                             </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-[10px] uppercase tracking-widest text-[#F5EDD6]/60 font-bold px-4">Convives</label>
-                                    <select className="bg-[#1A0A00] border border-white/10 p-4 rounded-2xl text-[#F5EDD6] focus:border-amber-500 transition-colors outline-none">
-                                        <option>2 Personnes</option>
-                                        <option>3 Personnes</option>
-                                        <option>4 Personnes</option>
-                                        <option>5+ Personnes</option>
-                                    </select>
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-[10px] uppercase tracking-widest text-[#F5EDD6]/60 font-bold px-4">Instant</label>
-                                    <select className="bg-[#1A0A00] border border-white/10 p-4 rounded-2xl text-[#F5EDD6] focus:border-amber-500 transition-colors outline-none">
-                                        <option>Midi</option>
-                                        <option>Apéro</option>
-                                        <option>Dîner</option>
-                                        <option>Soirée</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col gap-2">
-                                <label className="text-[10px] uppercase tracking-widest text-[#F5EDD6]/60 font-bold px-4">Demande Spéciale</label>
-                                <textarea rows={3} placeholder="Optionnel..." className="bg-[#1A0A00] border border-white/10 p-4 rounded-2xl text-[#F5EDD6] focus:border-amber-500 transition-colors outline-none resize-none" />
-                            </div>
-
-                            <button type="submit" className="w-full py-5 bg-[#C8860A] text-[#1A0A00] font-bold rounded-2xl transition-all hover:shadow-[0_0_30px_rgba(200,134,10,0.4)] flex items-center justify-center gap-3">
-                                <Calendar className="w-5 h-5" /> Confirmer la Demande
-                            </button>
-                        </form>
+                        )}
+                        <iframe
+                            src="https://whatsform.com/_kDNQJ"
+                            width="100%"
+                            height="100%"
+                            frameBorder="0"
+                            className={`w-full h-full filter invert-[0.9] hue-rotate-180 transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+                            onLoad={() => setIsLoading(false)}
+                        ></iframe>
                     </div>
                 </div>
             </div>
